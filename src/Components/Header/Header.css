@@ -1,0 +1,35 @@
+.header {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__title-holder {
+    text-align: center;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__title {
+    font-size: 8vw;
+}
+
+.header__arrow {
+    height: 20%;
+}
+
+.header__arrow img {
+    width: 10rem;
+    animation: shake 5s ease infinite;
+}
+
+@keyframes shake {
+      0%, 100% {transform: translateY(0);}
+      10%, 30%, 50%, 70%, 90% {transform: translateY(-10px);}
+      20%, 40%, 60%, 80% {transform: translateY(10px);}
+  }

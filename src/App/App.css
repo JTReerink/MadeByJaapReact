@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+:root {
+    --link: #80caff;
+    --hover: #fe5f55ff;
+    --highlight: #985f99ff;
+    --panels: #22577aff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%; 
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 2rem;
+    font-family: 'Kanit', sans-serif;
+    color: white;
+}
+
+a {
+    color: var(--link);
+}
+
+a:hover {
+    color: var(--hover);
+}
+
+.highlight {
+    color: var(--highlight);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: rgba(31, 31, 31);
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--light-blue);
+    border-radius: 15px;
+}

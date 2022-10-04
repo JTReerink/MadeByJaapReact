@@ -9,7 +9,12 @@
 }
 
 .navigation__main {
-    padding: 1rem;
+    padding: 2rem;
+    background: #22577aff;
+    border: 0.3rem solid #80caff;
+    border-bottom-left-radius: 2rem;
+    border-top-left-radius: 2rem;
+    border-right: none;
 }
 
 .navigation__titleHolder {

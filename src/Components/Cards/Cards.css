@@ -1,0 +1,61 @@
+.card {
+    background-color: transparent;
+    display: flex;
+    min-height: 40rem;
+    height: max-content;
+    width: 45vw;
+    min-width: 30rem;
+    perspective: 1000px;
+}
+
+.card__inner {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    box-shadow: 0 0 2rem 0 rgba(0,0,0,0.7);
+    border-radius: 2rem;
+}
+
+.card:hover .card__inner{
+    transform: rotateY(180deg);
+}
+
+.card__voorkant--figure {
+    height: 100%;
+    width: 100%;
+}
+
+.card__voorkant--figure img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.card__achterkant {
+    background: var(--panels);
+    transform: rotateY(180deg);
+}
+
+.card__title {
+    font-size: 3rem;
+    padding: 2rem;
+}
+
+.card__inhoud {
+    padding: 0 1.5rem;
+    font-weight: 200;
+}
+
+.card__voorkant, .card__achterkant {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.card__voorkant, .card__achterkant, .card__voorkant--figure img { 
+    border-radius: 2rem;
+}

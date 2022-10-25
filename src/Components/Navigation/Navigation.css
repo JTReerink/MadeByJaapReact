@@ -1,27 +1,26 @@
 .navigation {
+    z-index: 10;
     position: fixed;
     height: 100%;
-    right: 0;
+    left: 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-end;
-}
+    align-items: flex-start;
 
-.navigation__main {
-    padding: 2rem;
-    background: #22577aff;
-    border: 0.3rem solid #80caff;
-    border-bottom-left-radius: 2rem;
-    border-top-left-radius: 2rem;
-    border-right: none;
+    pointer-events: none;
 }
 
 .navigation__titleHolder {
     padding: 1rem;
+
+    pointer-events: all;
+
+    font-size: 3rem;
 }
 
+
 .navigation__main {
+    margin: auto 1rem;
     display: flex;
     flex-direction: column;
     font-size: 2.5rem;
@@ -29,21 +28,64 @@
 
 .navigation__main--link {
     text-decoration: none;
+    overflow-x: hidden;
+    white-space: nowrap;
+    width: 20rem;
+
+
+    transition: width 0.5s;
+    pointer-events: all;
 }
 
+.navigation__main--hidden .navigation__main--link {
+    width: 1.7rem;
+}
+
+
 .navigation__main--link svg {
-    width: 17.5px;
+    width: 1.7rem;
     fill: none;
-    stroke: #80caff;
+    stroke: var(--link);
     stroke-width: 3px;
 }
 
+.navigation__main--link:hover {
+    width: 20rem;
+}
+
 .navigation__main--link:hover svg {
-    fill: #fe5f55ff;
+    fill: var(--hover);
     stroke: none;
 }
 
+.navigation__socialButtons {
+    margin-left: 1rem;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    transition: box-shadow 0.5s, border-top-right-radius 0.5s, border-top-left-radius 0.5s;
+}
+
+.navigation__socialButtons--hidden {
+    background: rgb(108 115 137);
+    border-top-right-radius: 1.5rem;
+    border-top-left-radius: 1.5rem;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.5);
+}
+
+.navigation__socialButtons a {
+    height: 100%;
+    width: 4rem;
+    padding: 0.25rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    pointer-events: all;
+}
+
 .navigation__socialButtons svg {
-    width: 50px;
-    margin: 5px 2px;
+    margin: 0.2rem 0.3rem;
+    width: 100%;
 }

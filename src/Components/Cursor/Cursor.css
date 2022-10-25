@@ -1,0 +1,37 @@
+.cursor {
+    position: fixed;
+    display: none;
+    z-index: 2;
+    height: 0;
+    width: 0;
+    border-radius: 1rem;
+    
+    /* background-color: var(--panels); */
+    transform: translate(-50%, -50%);
+    
+    pointer-events: none;
+}
+
+.shown {
+    display: inherit;
+    /* width: fit-content;
+    height: fit-content; */
+
+    width: 10rem;
+    height: 10rem;
+    border: 0.25rem solid var(--panels);
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+.cursor__text {
+    white-space: nowrap;
+    padding: 0.2rem;
+
+    color: black;
+}

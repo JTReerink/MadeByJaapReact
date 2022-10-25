@@ -1,0 +1,38 @@
+.about {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.about__text {
+    min-width: 50rem;
+    width: 60%;
+
+}
+
+.about__text--inhoud {
+    text-align: center;
+    min-width: 40rem;
+    padding: 3rem 15rem;
+}
+
+.about__figure {
+    min-width: 20rem;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about__img {
+    height: 60%;
+    width: 60%;
+    object-fit: contain;
+}
+
+@media screen {
+    
+}

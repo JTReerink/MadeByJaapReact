@@ -18,13 +18,23 @@
     border-radius: 2rem;
 }
 
-.card:hover .card__inner{
+.card.--clicked .card__inner{
     transform: rotateY(180deg);
+}
+
+.card.--clicked .cursor {
+    display: none !important;
 }
 
 .card__voorkant--figure {
     height: 100%;
     width: 100%;
+    filter: grayscale(100%);
+    transition: filter 0.7s;
+}
+
+.card__voorkant--figure:hover{
+    filter: grayscale(0%);
 }
 
 .card__voorkant--figure img {
@@ -37,16 +47,21 @@
 .card__achterkant {
     background: var(--panels);
     transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .card__title {
     font-size: 3rem;
     padding: 2rem;
+    height: 20%;
 }
 
 .card__inhoud {
     padding: 0 1.5rem;
     font-weight: 200;
+    height: 60%;
 }
 
 .card__voorkant, .card__achterkant {
@@ -58,4 +73,9 @@
 
 .card__voorkant, .card__achterkant, .card__voorkant--figure img { 
     border-radius: 2rem;
+}
+
+.card__github {
+    width: 5rem;
+    height: 20%;
 }

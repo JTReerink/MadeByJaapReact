@@ -10,13 +10,14 @@
     transform: translate(-50%, -50%);
     
     pointer-events: none;
+    backface-visibility: hidden;
 }
 
 .shown {
     display: inherit;
     /* width: fit-content;
     height: fit-content; */
-
+    background-color: rgba(0,0,0,0.2);
     width: 10rem;
     height: 10rem;
     border: 0.25rem solid var(--panels);
@@ -33,5 +34,5 @@
     white-space: nowrap;
     padding: 0.2rem;
 
-    color: black;
+    color: var(--hover);
 }

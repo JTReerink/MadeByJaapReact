@@ -11,7 +11,7 @@ const About = () => {
                 </p>
                 <p className="about__text--inhoud">
                     Tijdens het mijn opleiding vond ik het heel leuk om te werken met <strong>Html, CSS, JS en React</strong> voor front-end, <strong>C#</strong> i.c.m. Unity 
-                    en ook werken met NodeMCU's en Arduinos vond ik heel interessant.
+                    en ook werken met <strong>NodeMCU's</strong> en <strong>Arduinos</strong> vond ik heel interessant.
                 </p>
             </div>
             <figure className="about__figure">

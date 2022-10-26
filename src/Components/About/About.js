@@ -5,12 +5,13 @@ const About = () => {
         <section className="about" id="about">
             <div className="about__text">
                 <p className="about__text--inhoud">
-                    Mijn naam is dus Jaap Reerink. <br />
-                    Momenteel een <strong>Software development</strong> student aan het MediaCollege Amsterdam.
-                    Mijn sterke kant is echter meer mijn sociale kant. Zo ben ik tijdens en naast mijn studie mezelf aan het verdiepen in <strong>Project management</strong>. <br />
+                    Ik ben dus <strong style={{color: "var(--hover)"}}>Jaap Reerink</strong>. <br />
+                    Een <strong>Software development</strong> student aan het MediaCollege Amsterdam. Momenteel bezig met front-end development. 
+                    Ook wil ik mij nog gaan verdiepen in <strong>Project management</strong> waarmee ik na deze opleiding verder mee gaan.
                 </p>
                 <p className="about__text--inhoud">
-                    Na mijn studie zie ik mijzelf werken als tussenpersoon voor developers en opdrachtgevers.
+                    Tijdens het mijn opleiding vond ik het heel leuk om te werken met <strong>Html, CSS, JS en React</strong> voor front-end, <strong>C#</strong> i.c.m. Unity 
+                    en ook werken met NodeMCU's en Arduinos vond ik heel interessant.
                 </p>
             </div>
             <figure className="about__figure">

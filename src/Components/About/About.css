@@ -14,9 +14,9 @@
 }
 
 .about__text--inhoud {
-    text-align: center;
     min-width: 40rem;
     padding: 3rem 15rem;
+    text-align: justify;
 }
 
 .about__figure {

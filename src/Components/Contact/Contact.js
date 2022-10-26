@@ -17,7 +17,7 @@ const Contact = () => {
                 </figure>
             </a>
             <a href="https://www.linkedin.com/in/jaapreerink/" className="contact__item">
-                <h3>Of stuur me een bericht op LinkedIn:</h3>
+                <h3>Stuur me een bericht op LinkedIn:</h3>
                 <figure className="linkedIn">
                     <svg
                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentcolor"

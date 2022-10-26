@@ -18,7 +18,7 @@ const Cards = (props) => {
     
     const [clicked, setClicked] = useState(false);
 
-    const changeStyle = () => setClicked(clicked => !clicked);
+    const changeStyle = () => setClicked(clicked => true);
 
     const ref = useRef(null);
 
@@ -39,6 +39,14 @@ const Cards = (props) => {
             y: 0
         });
     }
+
+    useEffect(() => {
+        document.addEventListener('click', event => {
+            if(ref.current.contains(event.target)) return;
+
+            setClicked(clicked => false);
+        });
+    }, []);
 
     useEffect(() => {   
         let isSubscribed = true;

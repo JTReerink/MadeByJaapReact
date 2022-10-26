@@ -1,6 +1,6 @@
 ---
 title: "Online Adventure Game"
-github: "https://github.com/JTReerink/KunstSpeeltuin"
+github: ""
 foto: "./media/oag.png"
 ---
 

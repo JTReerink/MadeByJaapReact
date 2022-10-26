@@ -58,9 +58,11 @@
 }
 
 .card__inhoud {
-    padding: 0 1.5rem;
+    padding: 0 4rem;
     font-weight: 200;
     height: 60%;
+    text-align: justify;
+    font-size: 1.8rem;
 }
 
 .card__voorkant, .card__achterkant {

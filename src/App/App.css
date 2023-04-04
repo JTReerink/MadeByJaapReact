@@ -21,6 +21,7 @@ body {
     font-size: 2rem;
     font-family: 'Kanit', sans-serif;
     color: white;
+    overflow-x: hidden;
 }
 
 a {

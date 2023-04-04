@@ -19,7 +19,7 @@
 }
 
 .card.--clicked .card__inner{
-    transform: rotateY(180deg);
+    transform: rotateX(-180deg);
 }
 
 .card.--clicked .cursor {
@@ -45,7 +45,7 @@
 
 .card__achterkant {
     background: var(--panels);
-    transform: rotateY(180deg);
+    transform: rotateX(180deg);
     display: flex;
     flex-direction: column;
     align-items: center;

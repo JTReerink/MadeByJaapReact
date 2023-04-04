@@ -55,7 +55,7 @@ const Cards = (props) => {
             let raw = props.path && await fetch(props.path).then(response => response.text());
             
             if(!raw) {
-                console.error("Can't fetch project :((((((");
+                console.error("Can't fetch project");
                 return;
             }
 
@@ -73,7 +73,7 @@ const Cards = (props) => {
 
     return (
         <article className={clicked ? "card --clicked" : "card"} onClick={changeStyle}  onMouseMove={mouseMove} onMouseLeave={mouseLeave} ref={ref}>
-            <Cursor name="Click me" mouseData = {mouseData} />
+            <Cursor name="" mouseData = {mouseData} />
             <div className="card__inner">
                 <div className="card__voorkant">
                     <figure className="card__voorkant--figure">

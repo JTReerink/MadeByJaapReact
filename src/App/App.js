@@ -14,9 +14,9 @@ const App = () => {
             <Header />
             <Projects/>
             <About />
-            {/* <div className="blog" id="blog">
-                <iframe src="https://blog.madebyjaap.nl" className="blog__frame"></iframe>
-            </div> */}
+            <div className="blog" id="blog">
+                <iframe title="Blog" src="https://madewithjaap.blogspot.com" className="blog__frame"></iframe>
+            </div>
             <Contact />
         </>
     )
